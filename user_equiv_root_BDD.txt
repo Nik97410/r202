@@ -1,0 +1,10 @@
+#
+# Création utilisateur 'toor' mot de passe 'admin' 
+# avec droits complets sur le BDD
+#
+
+mysql -u root -p
+
+> CREATE USER 'toor'@'%' IDENTIFIED BY 'admin';
+> GRANT ALL PRIVILEGES ON *.* TO 'toor'@'%' WITH GRANT OPTION;
+> FLUSH PRIVILEGES;
